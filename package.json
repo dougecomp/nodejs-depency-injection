@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-depency-injection",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/dougecomp/nodejs-depency-injection.git",
+  "license": "MIT",
+  "scripts": {
+    "start": "tsnd src/server.ts"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^1.1.1",
+    "typescript": "^4.1.2"
+  },
+  "dependencies": {
+    "reflect-metadata": "^0.1.13",
+    "tsyringe": "^4.4.0",
+    "typeorm": "^0.2.29"
+  }
+}
