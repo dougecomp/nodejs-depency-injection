@@ -5,7 +5,7 @@ import './container'
 import { CreateUserService } from './services/CreateUserService'
 
 (async function () {
+  container.register<{name: string; email: string}[]>("UserData", {useValue: [{name:"silvio", email:"silvio@santos.com"}]})
   const createUserService = container.resolve(CreateUserService)
-  const user = await createUserService.execute({name:'douglas', email:'douglas@email.com'})
-  console.log(user)
+  await createUserService.execute({name:'douglas', email:'douglas@email.com'})
 }())

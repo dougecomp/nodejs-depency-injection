@@ -14,6 +14,6 @@ export class CreateUserService {
 
   public async execute(data: ICreateUserDTO): Promise<{name: string;email: string}> {
     const user = await this.usersRepository.create(data);
-    return user;
+    return user
   }
 }
